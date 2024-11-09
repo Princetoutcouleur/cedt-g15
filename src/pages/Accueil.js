@@ -1,9 +1,9 @@
 import React from "react";
-import boy from "../assets/boy.png";
+import boy from "../assets/boy.jpeg";
 import motivation from "../assets/motivation.png";
 import atout from "../assets/atout.png";
 import icon from "../assets/Vector.png";
-import cathalogue from "../assets/cathalogue.png";
+import cathalogue from "../assets/catalogue.jpeg";
 
 const Accueil = () => {
   return (
@@ -32,11 +32,11 @@ const Accueil = () => {
       </div>
       <div className="container p-5">
         <h2>Bienvenue au CEDT - Le G15</h2>
-        <div className="row rounded-4 mt-4 gap-0 py-5">
+        <div className="row rounded-4 secondBg mt-4 gap-0">
           <div className="col-md-6 p-0 m-0">
-            <img src={boy} alt="" className="img-fluid" />
+            <img src={boy} alt="" className="img-fluid rounded-4" />
           </div>
-          <div className="col-md-6 secondBg d-flex justify-content-center align-items-center p-5 rounded-4 rounded-start m-0">
+          <div className="col-md-6 secondBg d-flex justify-content-center align-items-center p-5  m-0">
             <div>
               <h3 className="mb-3">Introduction</h3>
               <p>
@@ -84,21 +84,21 @@ const Accueil = () => {
           </div>
         </div>
       </div>
-      <div className="container p-5">
-        <div className="row rounded-4">
-          <div className="col-md-6 primaryBg d-flex justify-content-center align-items-center m-0 rounded-4 rounded-start p-5">
+      <div className="container p-5 ">
+        <div className="row rounded-4 primaryBg">
+          <div className="col-md-6 primaryBg d-flex justify-content-center align-items-center m-0 p-5 rounded-4">
             <div className="text-white text-center">
               <h3 className="mb-2">Pour toutes informations</h3>
               <h3 className="mb-3">Télécharger notre Catalogue</h3>
               <div className="d-flex justify-content-center">
                 <button className="btn btn-light px-3 py-2 rounded-pill">
-                  Télécharger <img src={icon} alt="" className="ms-2" />
+                  Télécharger <img src={icon} alt="" className="ms-2 " />
                 </button>
               </div>
             </div>
           </div>
           <div className="col-md-6 p-0 m-0">
-            <img src={cathalogue} alt="" className="img-fluid" />
+            <img src={cathalogue} alt="" className="img-fluid rounded-4" />
           </div>
         </div>
       </div>
