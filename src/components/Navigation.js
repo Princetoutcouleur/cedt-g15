@@ -28,10 +28,12 @@ const Navigation = () => {
   };
 
   return (
-    <div className="container border-bottom">
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <div className="container border-bottom ">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div className="container-fluid">
-          <Link className="navbar-brand primaryColor fw-bold" to="/">CEDT - Le G15</Link>
+          <Link className="navbar-brand primaryColor fw-bold" to="/">
+            CEDT - Le G15
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -42,31 +44,49 @@ const Navigation = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className={`collapse navbar-collapse ${navOpen ? "show" : ""}`} id="navbarSupportedContent">
+          <div
+            className={`collapse navbar-collapse ${navOpen ? "show" : ""}`}
+            id="navbarSupportedContent"
+          >
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
               <li className="nav-item">
                 <Link
-                  className={`nav-link fs-5 ${location.pathname === "/" ? "activeLink" : ""}`}
+                  className={`nav-link fs-5 ${
+                    location.pathname === "/" ? "activeLink" : ""
+                  }`}
                   to="/"
                   onClick={closeNav}
                 >
                   Accueil
                 </Link>
               </li>
-              <li className="nav-item dropdown ">
-                <a
-                  className={`nav-link fs-5 dropdown-toggle ${location.pathname === "/presentation" || location.pathname === "/conditions-admission" ? "activeLink" : ""}`}
-                  href="#"
-                  role="button"
+              <li className="nav-item dropdown">
+                <button
+                  className={`nav-link fs-5 dropdown-toggle ${
+                    location.pathname === "/presentation" ||
+                    location.pathname === "/conditions-admission"
+                      ? "activeLink"
+                      : ""
+                  }`}
+                  type="button"
                   onClick={toggleDropdown}
                   aria-expanded={dropdownOpen}
+                  aria-haspopup="true"
                 >
                   Le G15
-                </a>
-                <ul className={`dropdown-menu ${dropdownOpen ? "show primaryBg" : ""}`}>
+                </button>
+                <ul
+                  className={`dropdown-menu ${
+                    dropdownOpen ? "show primaryBg" : ""
+                  }`}
+                >
                   <li className="dropdown-item primaryBg text-white">
                     <Link
-                      className={`nav-link text-white fs-5 ${location.pathname === "/presentation" ? "activeLink" : ""}`}
+                      className={`nav-link text-white fs-5 ${
+                        location.pathname === "/presentation"
+                          ? "activeLink"
+                          : ""
+                      }`}
                       to="/presentation"
                       onClick={closeNav}
                     >
@@ -75,7 +95,11 @@ const Navigation = () => {
                   </li>
                   <li className="dropdown-item primaryBg">
                     <Link
-                      className={`nav-link text-white fs-5 ${location.pathname === "/conditions-admission" ? "activeLink" : ""}`}
+                      className={`nav-link text-white fs-5 ${
+                        location.pathname === "/conditions-admission"
+                          ? "activeLink"
+                          : ""
+                      }`}
                       to="/conditions-admission"
                       onClick={closeNav}
                     >
@@ -86,7 +110,9 @@ const Navigation = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  className={`nav-link fs-5 ${location.pathname === "/formations" ? "activeLink" : ""}`}
+                  className={`nav-link fs-5 ${
+                    location.pathname === "/formations" ? "activeLink" : ""
+                  }`}
                   to="/formations"
                   onClick={closeNav}
                 >
@@ -95,7 +121,9 @@ const Navigation = () => {
               </li>
               <li className="nav-item">
                 <Link
-                  className={`nav-link fs-5 ${location.pathname === "/contact" ? "activeLink" : ""}`}
+                  className={`nav-link fs-5 ${
+                    location.pathname === "/contact" ? "activeLink" : ""
+                  }`}
                   to="/contact"
                   onClick={closeNav}
                 >

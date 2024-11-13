@@ -8,24 +8,26 @@ import cathalogue from "../assets/catalogue.jpeg";
 const Accueil = () => {
   return (
     <div className="container-fluid p-0 m-0">
-      <div className="container-fluid header p-5 text-white d-flex align-items-center">
-        <div>
-          <h1 className="mb-3 fw-bold">LE G15</h1>
-          <p className="mb-3 fw-bold">
-            Nous proposons des formations diversifiées et adaptées aux <br />{" "}
-            besoins du marché, allant des domaines techniques aux <br />
-            compétences pratiques.
-          </p>
-          <div className="d-flex gap-4 flex-wrap">
-            <div>
-              <button className="btn btn-light primaryColor px-3 py-2 rounded">
-                Contactez-nous
-              </button>
-            </div>
-            <div>
-              <button className="btn btn-default text-white border border-white px-3 py-2 rounded">
-                Qui sommes nous ?
-              </button>
+      <div className="pt-5">
+        <div className="container-fluid header p-5 text-white d-flex align-items-center">
+          <div>
+            <h1 className="mb-3 fw-bold">LE G15</h1>
+            <p className="mb-3 fw-bold">
+              Nous proposons des formations diversifiées et adaptées aux <br />{" "}
+              besoins du marché, allant des domaines techniques aux <br />
+              compétences pratiques.
+            </p>
+            <div className="d-flex gap-4 flex-wrap">
+              <div>
+                <button className="btn btn-light primaryColor px-3 py-2 rounded">
+                  Contactez-nous
+                </button>
+              </div>
+              <div>
+                <button className="btn btn-default text-white border border-white px-3 py-2 rounded">
+                  Qui sommes nous ?
+                </button>
+              </div>
             </div>
           </div>
         </div>

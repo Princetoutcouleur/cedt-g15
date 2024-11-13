@@ -17,7 +17,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="col-md-4 mb-3">
-          <ul className="list-unstyled d-flex justify-content-between align-items-center flex-wrap">
+          <ul className="list-unstyled d-flex justify-content-between flex-wrap">
             <li className="">
               <Link className="text-decoration-none primaryColor" to="/">
                 Accueil
@@ -49,25 +49,45 @@ const Footer = () => {
         <div className="col-md-4 d-flex justify-content-center mb-3">
           <div>
             <ul className="list-unstyled d-flex gap-3">
-              <li className="px-3 py-2 secondBg rounded" width="36px">
-                <a href="">
-                  <FaFacebookF className="primaryColor fs-4" />
-                </a>
+              <li className="" width="36px">
+                <button
+                  className="btn px-3 py-2 secondBg rounded primaryColor fs-4"
+                  onClick={() =>
+                    window.open("https://www.facebook.com", "_blank")
+                  }
+                >
+                  <FaFacebookF />
+                </button>
               </li>
-              <li className="px-3 py-2 secondBg rounded" width="36px">
-                <a href="">
-                  <FaTwitter className="primaryColor fs-4" />
-                </a>
+              <li className="" width="36px">
+                <button
+                  className="btn px-3 py-2 secondBg rounded primaryColor fs-4"
+                  onClick={() =>
+                    window.open("https://www.twitter.com", "_blank")
+                  }
+                >
+                  <FaTwitter />
+                </button>
               </li>
-              <li className="px-3 py-2 secondBg rounded" width="36px">
-                <a href="">
-                  <FaInstagram className="primaryColor fs-4" />
-                </a>
+              <li className="" width="36px">
+                <button
+                  className="btn px-3 py-2 secondBg rounded primaryColor fs-4"
+                  onClick={() =>
+                    window.open("https://www.instagram.com", "_blank")
+                  }
+                >
+                  <FaInstagram />
+                </button>
               </li>
-              <li className="px-3 py-2 secondBg rounded" width="36px">
-                <a href="">
-                  <FaLinkedin className="primaryColor fs-4" />
-                </a>
+              <li className="" width="36px">
+                <button
+                  className="btn px-3 py-2 secondBg rounded primaryColor fs-4"
+                  onClick={() =>
+                    window.open("https://www.linkedin.com", "_blank")
+                  }
+                >
+                  <FaLinkedin />
+                </button>
               </li>
             </ul>
           </div>
